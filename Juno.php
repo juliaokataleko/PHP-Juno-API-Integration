@@ -44,6 +44,7 @@ class Juno {
             "Content-Type: application/x-www-form-urlencoded",
             "Authorization: Basic {$this->base64}"
         ]);
+        
         $data = json_decode(curl_exec($ci));
     }
 
